@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import colors from '../../styles/color';
 
@@ -23,42 +25,50 @@ import {
   CheckoutText,
 } from './styles';
 
-export default function Cart() {
+function Cart({ cartProducts }) {
+  console.tron.warn(cartProducts);
   return (
     <Container>
-      <ProductsTable>
-        <Product>
-          <ProductInfo>
-            <ProductImage
-              source={{
-                uri:
-                  'https://static.netshoes.com.br/produtos/crocs-classic-clog/06/FDT-0204-006/FDT-0204-006_zoom1.jpg?ims=120x',
-              }}
-            />
-            <ProductDetails>
-              <ProductTitle>Crocs Classic Clog</ProductTitle>
-              <ProductPrice>R$139.00</ProductPrice>
-            </ProductDetails>
-            <ProductDelete>
-              <Icon name="delete-forever" size={24} color={colors.purple} />
-            </ProductDelete>
-          </ProductInfo>
-          <ProductControls>
-            <ProductControlButton>
-              <Icon
-                name="remove-circle-outline"
-                size={20}
-                color={colors.purple}
+      <ProductsTable
+        data={cartProducts}
+        keyExtractor={item => String(item.id)}
+        renderItem={({ item }) => (
+          <Product>
+            <ProductInfo>
+              <ProductImage
+                source={{
+                  uri: item.image,
+                }}
               />
-            </ProductControlButton>
-            <Productamount value={String(505)} />
-            <ProductControlButton>
-              <Icon name="add-circle-outline" size={20} color={colors.purple} />
-            </ProductControlButton>
-            <ProductSubTotal>R$ 1250.00</ProductSubTotal>
-          </ProductControls>
-        </Product>
-      </ProductsTable>
+              <ProductDetails>
+                <ProductTitle>{item.title}</ProductTitle>
+                <ProductPrice>{item.priceFormatted}</ProductPrice>
+              </ProductDetails>
+              <ProductDelete>
+                <Icon name="delete-forever" size={24} color={colors.purple} />
+              </ProductDelete>
+            </ProductInfo>
+            <ProductControls>
+              <ProductControlButton>
+                <Icon
+                  name="remove-circle-outline"
+                  size={20}
+                  color={colors.purple}
+                />
+              </ProductControlButton>
+              <Productamount value={String(505)} />
+              <ProductControlButton>
+                <Icon
+                  name="add-circle-outline"
+                  size={20}
+                  color={colors.purple}
+                />
+              </ProductControlButton>
+              <ProductSubTotal>R$ 1250.00</ProductSubTotal>
+            </ProductControls>
+          </Product>
+        )}
+      />
       <TotalContainer>
         <TotalText>Total</TotalText>
         <TotalAmount>R$ 1250.00</TotalAmount>
@@ -69,3 +79,11 @@ export default function Cart() {
     </Container>
   );
 }
+const mapStateToProps = state => ({
+  cartProducts: state.cart,
+});
+
+export default connect(
+  mapStateToProps,
+  null
+)(Cart);

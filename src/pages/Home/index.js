@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import api from '../../services/api';
 
@@ -18,7 +19,7 @@ import {
 } from './styles';
 import colors from '../../styles/color';
 
-export default class Home extends Component {
+class Home extends Component {
   constructor() {
     super();
     this.state = {
@@ -41,39 +42,50 @@ export default class Home extends Component {
     this.setState({ products: data });
   };
 
+  handleAddToCart = product => {
+    const { dispatch } = this.props;
+
+    dispatch({
+      type: '@cart/ADDREQUEST',
+      product,
+    });
+  };
+
+  renderProducts = ({ item }) => {
+    return (
+      <Product key={item.id}>
+        <ProducImage
+          source={{
+            uri: item.image,
+          }}
+        />
+        <ProductTitle>{item.title}</ProductTitle>
+        <PoductPrice>{item.priceFormatted}</PoductPrice>
+        <AddButtonContainer onPress={() => this.handleAddToCart(item)}>
+          <ProductAmount>
+            <Icon name="add-shopping-cart" size={20} color={colors.whiteBase} />
+            <ProductAmountText>300</ProductAmountText>
+          </ProductAmount>
+          <AddButtonText> Add to cart</AddButtonText>
+        </AddButtonContainer>
+      </Product>
+    );
+  };
+
   render() {
     const { products } = this.state;
-    console.tron.log(products);
+    console.tron.log(this.props);
     return (
       <Container>
         <List
           horizontal
           data={products}
-          keyExtractor={product => String(product.id)}
-          renderItem={({ item }) => (
-            <Product key={item.id}>
-              <ProducImage
-                source={{
-                  uri: item.image,
-                }}
-              />
-              <ProductTitle>{item.title}</ProductTitle>
-              <PoductPrice>{item.priceFormatted}</PoductPrice>
-              <AddButtonContainer>
-                <ProductAmount>
-                  <Icon
-                    name="add-shopping-cart"
-                    size={20}
-                    color={colors.whiteBase}
-                  />
-                  <ProductAmountText>300</ProductAmountText>
-                </ProductAmount>
-                <AddButtonText> Add to cart</AddButtonText>
-              </AddButtonContainer>
-            </Product>
-          )}
+          extraData={this.props}
+          keyExtractor={item => String(item.id)}
+          renderItem={this.renderProducts}
         />
       </Container>
     );
   }
 }
+export default connect()(Home);
