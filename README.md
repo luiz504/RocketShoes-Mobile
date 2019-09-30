@@ -16,7 +16,25 @@ Flux Architecture on React-Native Environment.
 
 
 ## Libraries
+>react-native-gesture-handler
 
+>react-native-reanimated
+
+>react-navigation
+
+>react-navigation-stack
+
+>reactotron-react-native
+
+>styled-components
+
+>polished
+
+>intl
+
+>axios
+
+>react-redux
 
 ### Code STD
 > Eslist (AIRBNB)
