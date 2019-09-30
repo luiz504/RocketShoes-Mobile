@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { FlatList } from 'react-native';
 
 import colors from '../../styles/color';
 
@@ -8,7 +9,9 @@ export const Container = styled.View`
   padding: 10px;
   margin: 15px;
 `;
-export const ProductsTable = styled.View``;
+export const ProductsTable = styled(FlatList).attrs({
+  showsVerticalScrollIndicator: false,
+})``;
 
 export const Product = styled.View``;
 
