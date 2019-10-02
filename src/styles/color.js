@@ -4,5 +4,6 @@ export default {
   whiteBase: '#FFF',
   whiteContrast: '#EEE',
   whiteBorder: '#DDD',
-  greyLight: '#9999',
+  greyLight: '#999999',
+  black: '#000000',
 };

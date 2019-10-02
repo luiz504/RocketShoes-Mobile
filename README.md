@@ -36,6 +36,8 @@ Flux Architecture on React-Native Environment.
 
 >react-redux
 
+>immer
+
 ### Code STD
 > Eslist (AIRBNB)
 

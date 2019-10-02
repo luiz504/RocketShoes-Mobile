@@ -8,6 +8,7 @@ export const Container = styled.View`
   border-radius: 5px;
   padding: 10px;
   margin: 15px;
+  flex: 1;
 `;
 export const ProductsTable = styled(FlatList).attrs({
   showsVerticalScrollIndicator: false,
@@ -47,6 +48,7 @@ export const ProductControls = styled.View`
 export const ProductControlButton = styled.TouchableOpacity``;
 export const Productamount = styled.TextInput.attrs({
   readonly: true,
+  editable: false,
 })`
   background: ${colors.whiteBase};
   padding: 5px;
@@ -55,6 +57,7 @@ export const Productamount = styled.TextInput.attrs({
   border-radius: 5px;
   min-width: 52px;
   text-align: center;
+  color: ${colors.black};
 `;
 export const ProductSubTotal = styled.Text`
   font-weight: bold;
