@@ -28,7 +28,8 @@ module.exports = {
     ],
     'no-console':'off',
     'import/prefer-default-export': 'off',
-    'global-require': 'off'
+    'global-require': 'off',
+    'no-param-reassign': 'off'
 
   },
 };
