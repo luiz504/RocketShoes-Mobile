@@ -29,14 +29,20 @@ import {
   CheckoutText,
 } from './styles';
 
-function Cart({ cartProducts, dispatch, RmFromCart, UpdateAmount, total }) {
+function Cart({
+  cartProducts,
+  dispatch,
+  RmFromCart,
+  UpdateAmountRequest,
+  total,
+}) {
   // console.tron.warn(total);
 
   function increment(product) {
-    UpdateAmount(product.id, product.amount + 1);
+    UpdateAmountRequest(product.id, product.amount + 1);
   }
   function decrement(product) {
-    UpdateAmount(product.id, product.amount - 1);
+    UpdateAmountRequest(product.id, product.amount - 1);
   }
 
   return (

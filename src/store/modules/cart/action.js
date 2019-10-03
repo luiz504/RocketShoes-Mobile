@@ -13,14 +13,21 @@ export function AddToCartSucess(product) {
 
 export function RmFromCart(id) {
   return {
-    type: '@cart/RMREQUEST',
+    type: '@cart/RM_REQUEST',
     id,
   };
 }
 
-export function UpdateAmount(id, amount) {
+export function UpdateAmountRequest(id, amount) {
   return {
-    type: '@cart/UPDATE',
+    type: '@cart/UPDATE_AMOUNT_REQUEST',
+    id,
+    amount,
+  };
+}
+export function UpdateAmountSucess(id, amount) {
+  return {
+    type: '@cart/UPDATE_AMOUNT_SUCESS',
     id,
     amount,
   };
