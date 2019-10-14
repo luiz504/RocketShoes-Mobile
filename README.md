@@ -35,37 +35,39 @@ Flux Architecture on React-Native Environment.
 ## Libraries
 > create react-native init (cli)
 
->react-native-gesture-handler
+> react-native-gesture-handler
 
->react-native-reanimated
+> react-native-reanimated
 
->react-navigation
+> react-navigation
 
->react-navigation-stack
+> react-navigation-stack
 
->reactotron-react-native
+> reactotron-react-native
 
->reactotron-redux
+> reactotron-redux
 
->reactotron-redux-saga
+> reactotron-redux-saga
 
->styled-components
+> styled-components
 
->polished
+> polished
 
->intl
+> intl
 
->axios
+> axios
 
->react-redux
+> react-redux
 
->redux-saga
+> redux-saga
 
->immer
+> immer
 
->react-native-vector-icons
+> react-native-vector-icons
 
->prop-types
+> prop-types
+
+> react-native-dotenv
 
 ### Code STD
 > Eslist (AIRBNB)
