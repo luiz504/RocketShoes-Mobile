@@ -35,13 +35,6 @@
 
     },
     {
-      "id": 2,
-      "title": "Tênis Asics Gel-Quantum 180",
-      "price": 599185123456124521351112345.9,
-      "image": "https://static.netshoes.com.br/produtos/tenis-asics-gel-quantum-180-4-masculino/02/D18-3056-002/D18-3056-002_zoom1.jpg?ims=120x",
-      "image2": "https://static.netshoes.com.br/produtos/tenis-asics-gel-quantum-180-4-masculino/02/D18-3056-002/D18-3056-002_zoom4.jpg?ims=120x"
-    },
-    {
       "id": 3,
       "title": "Tênis Miranha Infantil",
       "price": 84.99,
@@ -49,8 +42,16 @@
       "image2": "https://static.netshoes.com.br/produtos/tenis-infantil-diversao-homem-aranha-bicolor/66/E32-0647-066/E32-0647-066_zoom2.jpg?ims=120x"
     },
     {
+      "id": 2,
+      "title": "Tênis Asics Gel-Quantum 180",
+      "price": 599.8,
+      "image": "https://static.netshoes.com.br/produtos/tenis-asics-gel-quantum-180-4-masculino/02/D18-3056-002/D18-3056-002_zoom1.jpg?ims=120x",
+      "image2": "https://static.netshoes.com.br/produtos/tenis-asics-gel-quantum-180-4-masculino/02/D18-3056-002/D18-3056-002_zoom4.jpg?ims=120x"
+    },
+
+    {
       "id": 5,
-      "title": "Tênis VR Caminhada Confortável Detalhes Couro Masculino ultra mega right power 2000",
+      "title": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
       "price": 139.9,
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis2.jpg"
     },

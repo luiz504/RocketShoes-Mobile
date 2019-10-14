@@ -6,16 +6,35 @@ Flux Architecture on React-Native Environment.
 
 ----
 ## Header
---
+- [x] Logo + onClick(Navigate to Home page).
+- [x] Cart icon + onclick(Navigate to Cart page) + reflect different types of items in cart.
+
+## Product page
+- [ ] Show specific product informations
+
 ## Main page
---
+- [x] List the products into a horizontal list.
+- [x] Each product should contain img, title, price, 'ADD TO CART' button.
+- [x] 'ADD TO CART' button should reflect how many this product already in cart.
+- [x] Stock Validation - Can't add more product than the available stock.
+- [x] Send an alert after exceeding the max product availability.
+- [ ] List loading animation
+
 ## Cart page
---
+- [x] Render a table with product img, info, quantity, subtotal, total.
+- [x] Increase and decrease product quantity buttons
+- [x] Delete Button
+- [x] CheckOut Button
+- [x] Stock Validation - Can't add more product than the available stock.
+- [x] Send an alert after exceeding the max product availability.
+- [x] Empty cart msg
 
 ----
 
 
 ## Libraries
+> create react-native init (cli)
+
 >react-native-gesture-handler
 
 >react-native-reanimated
@@ -25,6 +44,10 @@ Flux Architecture on React-Native Environment.
 >react-navigation-stack
 
 >reactotron-react-native
+
+>reactotron-redux
+
+>reactotron-redux-saga
 
 >styled-components
 
@@ -36,7 +59,13 @@ Flux Architecture on React-Native Environment.
 
 >react-redux
 
+>redux-saga
+
 >immer
+
+>react-native-vector-icons
+
+>prop-types
 
 ### Code STD
 > Eslist (AIRBNB)
