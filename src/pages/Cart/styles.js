@@ -8,7 +8,7 @@ export const Container = styled.View`
   border-radius: 5px;
   padding: 10px;
   margin: 15px;
-  flex: 1;
+  max-height: 90%;
 `;
 export const ProductsTable = styled(FlatList).attrs({
   showsVerticalScrollIndicator: false,
@@ -93,4 +93,15 @@ export const CheckoutText = styled.Text`
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+`;
+
+export const EmptyContainer = styled.View`
+  align-items: center;
+  justify-content: center;
+`;
+
+export const EmptyContainerText = styled.Text`
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 18px;
 `;

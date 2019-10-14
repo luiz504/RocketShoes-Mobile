@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import colors from '../../styles/color';
 import {
   Logo,
@@ -20,7 +21,7 @@ function Header({ navigation, cartSize }) {
           <Logo resizeMode="cover" />
         </LogoContainer>
         <CartContainer onPress={() => navigation.navigate('Cart')}>
-          <Icon name="cart" color={colors.whiteBase} size={24} />
+          <Icon name="shopping-basket" color={colors.whiteBase} size={24} />
           <ItemCount>{cartSize}</ItemCount>
         </CartContainer>
       </Container>
@@ -35,3 +36,10 @@ export default connect(
   mapStateToProps,
   null
 )(Header);
+
+Header.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func,
+  }).isRequired,
+  cartSize: PropTypes.number.isRequired,
+};

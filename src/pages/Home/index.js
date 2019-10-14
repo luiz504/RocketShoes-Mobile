@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
+import PropTypes from 'prop-types';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import api from '../../services/api';
 import * as CartActions from '../../store/modules/cart/action';
@@ -75,7 +76,7 @@ class Home extends Component {
 
   render() {
     const { products } = this.state;
-    // console.tron.log(this.props);
+    console.tron.log(this.props);
     return (
       <Container>
         <List
@@ -103,3 +104,8 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(Home);
+
+Home.propTypes = {
+  AddToCartRequest: PropTypes.func.isRequired,
+  amount: PropTypes.objectOf(PropTypes.number).isRequired,
+};
