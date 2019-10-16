@@ -30,42 +30,44 @@
       "id": 1,
       "title": "Crocs Classic Clog",
       "price": 139.0,
-      "image": "https://static.netshoes.com.br/produtos/crocs-classic-clog/06/FDT-0204-006/FDT-0204-006_zoom1.jpg?ims=120x",
-      "image2": "https://static.netshoes.com.br/produtos/crocs-classic-clog/06/FDT-0204-006/FDT-0204-006_zoom3.jpg?ims=120x"
+      "image": "https://i.imgur.com/OSWdlSj.jpg",
+      "image2": "https://i.imgur.com/cJefEp2.jpg"
 
+    },
+    {
+      "id": 2,
+      "title": "Tênis Asics Gel-Quantum 180",
+      "price": 599.9,
+      "image": "https://i.imgur.com/33zs7MX.jpg",
+      "image2": "https://i.imgur.com/42AT1NK.jpg"
     },
     {
       "id": 3,
       "title": "Tênis Miranha Infantil",
       "price": 84.99,
-      "image": "https://static.netshoes.com.br/produtos/tenis-infantil-diversao-homem-aranha-bicolor/66/E32-0647-066/E32-0647-066_zoom1.jpg?ims=120x",
-      "image2": "https://static.netshoes.com.br/produtos/tenis-infantil-diversao-homem-aranha-bicolor/66/E32-0647-066/E32-0647-066_zoom2.jpg?ims=120x"
+      "image": "https://i.imgur.com/CQWcvL4.jpg",
+      "image2": "https://i.imgur.com/jpeWDmM.jpg"
     },
-    {
-      "id": 2,
-      "title": "Tênis Asics Gel-Quantum 180",
-      "price": 599.8,
-      "image": "https://static.netshoes.com.br/produtos/tenis-asics-gel-quantum-180-4-masculino/02/D18-3056-002/D18-3056-002_zoom1.jpg?ims=120x",
-      "image2": "https://static.netshoes.com.br/produtos/tenis-asics-gel-quantum-180-4-masculino/02/D18-3056-002/D18-3056-002_zoom4.jpg?ims=120x"
-    },
-
     {
       "id": 5,
-      "title": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
-      "price": 139.9,
-      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis2.jpg"
+      "title": "Tênis Nike Revolution 5 Masculino - Preto",
+      "price": 279.99,
+      "image": "https://i.imgur.com/ICo7NuF.jpg",
+      "image2": "https://i.imgur.com/y04XP6l.jpg"
     },
     {
       "id": 6,
-      "title": "Tênis Adidas Duramo Lite 2.0",
-      "price": 219.9,
-      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis3.jpg"
+      "title": "Bota Coturno SapatoFran Zíper Masculino - Marrom",
+      "price": 119.90,
+      "image": "https://i.imgur.com/4v3GGlG.jpg",
+      "image2": "https://i.imgur.com/jVJ8U2D.jpg"
     },
     {
       "id": 4,
-      "title": "Tênis de Caminhada Leve Confortável",
-      "price": 179.9,
-      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis1.jpg"
+      "title": "Tênis Nike Flex Motion Trainer Feminino - Pink e Cinza",
+      "price": 349.99,
+      "image": "https://i.imgur.com/RKIlppx.jpg",
+      "image2": "https://i.imgur.com/E8c3qFQ.jpg"
     }
 
   ]

@@ -1,6 +1,8 @@
 import styled from 'styled-components/native';
 import { FlatList } from 'react-native';
 import { darken } from 'polished';
+import Spinner from 'react-native-spinkit';
+
 import colors from '../../styles/color';
 
 export const Container = styled.View`
@@ -62,4 +64,13 @@ export const AddButtonText = styled.Text`
   font-weight: bold;
   color: ${colors.whiteBase};
   text-transform: uppercase;
+`;
+export const LoadingContainer = styled.View`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const LoadingAnimation = styled(Spinner)`
+  overflow: visible;
 `;

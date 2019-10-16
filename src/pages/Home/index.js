@@ -20,6 +20,8 @@ import {
   ProductAmount,
   ProductAmountText,
   AddButtonText,
+  LoadingContainer,
+  LoadingAnimation,
 } from './styles';
 import colors from '../../styles/color';
 
@@ -28,14 +30,13 @@ class Home extends Component {
     super();
     this.state = {
       products: [],
+      loading: false,
     };
   }
 
-  componentDidMount() {
-    this.getProducts();
-  }
+  async componentDidMount() {
+    this.setState({ loading: true });
 
-  getProducts = async () => {
     const response = await api.get('/products');
 
     const data = response.data.map(product => ({
@@ -44,7 +45,13 @@ class Home extends Component {
     }));
 
     this.setState({ products: data });
-  };
+
+    this.setState({ loading: false });
+  }
+
+  // getProducts = async () => {
+
+  // };
 
   handleAddToCart = id => {
     const { AddToCartRequest } = this.props;
@@ -75,9 +82,18 @@ class Home extends Component {
   };
 
   render() {
-    const { products } = this.state;
-    console.tron.log(this.props);
-    return (
+    const { products, loading } = this.state;
+
+    return loading ? (
+      <LoadingContainer>
+        <LoadingAnimation
+          isVisible
+          size={50}
+          type="ChasingDots"
+          color={colors.purple}
+        />
+      </LoadingContainer>
+    ) : (
       <Container>
         <List
           horizontal

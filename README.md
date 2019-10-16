@@ -18,7 +18,7 @@ Flux Architecture on React-Native Environment.
 - [x] 'ADD TO CART' button should reflect how many this product already in cart.
 - [x] Stock Validation - Can't add more product than the available stock.
 - [x] Send an alert after exceeding the max product availability.
-- [ ] List loading animation
+- [x] List loading animation
 
 ## Cart page
 - [x] Render a table with product img, info, quantity, subtotal, total.
@@ -68,6 +68,8 @@ Flux Architecture on React-Native Environment.
 > prop-types
 
 > react-native-dotenv
+
+> react-native-spinkit
 
 ### Code STD
 > Eslist (AIRBNB)
