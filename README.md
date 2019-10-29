@@ -1,16 +1,11 @@
 # Mobile app using React-Native + Flux Architecture
 ### Project Meaning
-Create a WebPageMobile verion of rocketseat Website to learn about
-Flux Architecture on React-Native Environment.
-
-
+  Create a Mobile version of [Rocketshoes](https://github.com/luiz504/RocketShoes-Web) Website to learn about
+  Flux Architecture on React-Native Environment.
 ----
 ## Header
 - [x] Logo + onClick(Navigate to Home page).
 - [x] Cart icon + onclick(Navigate to Cart page) + reflect different types of items in cart.
-
-## Product page
-- [ ] Show specific product informations
 
 ## Main page
 - [x] List the products into a horizontal list.
@@ -21,80 +16,29 @@ Flux Architecture on React-Native Environment.
 - [x] List loading animation
 
 ## Cart page
-- [x] Render a table with product img, info, quantity, subtotal, total.
+- [x] Render a table with product image, info, quantity, subtotal, total.
 - [x] Increase and decrease product quantity buttons
 - [x] Delete Button
 - [x] CheckOut Button
 - [x] Stock Validation - Can't add more product than the available stock.
 - [x] Send an alert after exceeding the max product availability.
 - [x] Empty cart msg
-
 ----
 
+##  Flux Pattern
+  * Libs
+    * [redux](https://github.com/reduxjs/redux)
+    * [redux-saga](https://github.com/redux-saga/redux-saga)
+    * [react-redux](https://github.com/reduxjs/react-redux)
 
-## Libraries
-> create react-native init (cli)
+  * Debug Libs / Reactotron
+    * [reactotron-redux](https://github.com/infinitered/reactotron-redux)
+    * [reactotron-redux-saga](https://github.com/infinitered/reactotron/blob/master/docs/plugin-redux-saga.md)
+    * [reactotron-react-native](https://github.com/infinitered/reactotron/blob/master/docs/quick-start-react-native.md)
 
-> react-native-gesture-handler
+## API [Json-Server](https://github.com/typicode/json-server)
 
-> react-native-reanimated
-
-> react-navigation
-
-> react-navigation-stack
-
-> reactotron-react-native
-
-> reactotron-redux
-
-> reactotron-redux-saga
-
-> styled-components
-
-> polished
-
-> intl
-
-> axios
-
-> react-redux
-
-> redux-saga
-
-> immer
-
-> react-native-vector-icons
-
-> prop-types
-
-> react-native-dotenv
-
-> react-native-spinkit
-
-### Code STD
-> Eslist (AIRBNB)
-
-> Prettier
-
-> EditorConfig
-
-### Debugger
-
-> Reactotron
+## [React-native-cli](https://github.com/react-native-community/cli)
 
 
 
-# Desafio 07. Redux
-
-Nesse desafio você migrará o projeto de e-commerce criado na web para dispositivos móveis utilizando React Native.
-
-Utilize ESLint, Prettier, EditorConfig, React Navigation e todas outras ferramentas que vimos até aqui no mundo do React Native.
-
-O projeto terá as mesmas funcionalidades que o projeto web mas deve possuir uma interface mobile.
-
-O layout do projeto está em anexo com esse desafio. O arquivo `.sketch` (no diretório `assets-desafio`) pode ser aberto no Figma, que é uma ferramenta de prototipação online.
-
-Resultado:
-<center>
-<img src="demo.gif" height="400">
-</center>
